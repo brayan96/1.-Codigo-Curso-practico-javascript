@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio y mediana</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Promedio y medianas
+        </h1>
+    </header>
+    <section>
+        <h2>Calcula El promedio o tambien la mediana</h2>
+        <form>
+            <div>
+                <label for="codigoValor">
+                    <span>Escribe el valor deseado</span>
+                    <input id="codigoValor" type="number" value="0" />
+                </label>
+            </div>
+            <button type="button" onclick="onClickButtonValor()">
+                Ingresar valor
+            </button>
+            <button type="button" onclick="onClickButtonPromedio()">
+                Calcular promedio
+            </button>
+            <button type="button" onclick="onClickButtonMediana()">
+                Calcular mediana
+            </button>
+            <p id="resultado"></p>
+        </form>
+    </section>
+    <script src="./promedioMediana.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./desafio.css">
+    <title>Desafio cupones | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentajes y descuentos
+        </h1>
+        <p>Este es un desafio del curso práctico de JavaScript</p>
+    </header>
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento por cupones</h2>
+        <form>
+            <label for="precioOriginal">
+                <span>Escribe el precio de tu producto</span>
+                <input id="precioOriginal" type="number" value="0"/>
+            </label>
+            <div class="masCupones">
+                <label for="codigoCupon" id="label-cupon">
+                    <span>Escribe el código de tu cupón</span>
+                    <input id="codigoCupon" type="number" value="0"/>
+                </label>
+            </div>
+            <button type="button" onclick="onClickButtonCupon()">
+                Ingresar cupón
+            </button>
+            <button type="button" onclick="onClickButtonPrecioFinal()">
+                Calcular el precio final
+            </button>
+            <p id="resultado"></p>
+        </form>
+    </section>
+    <script src="./desafio.js"></script>
+</body>
+</html>

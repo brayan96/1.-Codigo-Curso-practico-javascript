@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ponderado.css">
+    <title>Promedio ponderado</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Promedio ponderado
+        </h1>
+    </header>
+    <section>
+        <h2>Calcula el Promedio ponderado</h2>
+        <form>
+            <div>
+                <label for="valor">
+                    <span>Escribe el valor deseado</span>
+                    <input id="valor" type="number" value="0" />
+                </label>
+                <label for="peso">
+                    <span>Escribe el peso deseado</span>
+                    <input id="peso" type="number" value="0" />
+                </label>
+            </div>
+            <button type="button" onclick="onClickButtonItem()">
+                Ingresar item
+            </button>
+            <button type="button" onclick="onClickButtonPonderado()">
+                Calcular el promedio ponderado
+            </button>
+            <p id="resultado"></p>
+        </form>
+    </section>
+    <script src="./ponderado.js"></script>
+</body>
+</html>

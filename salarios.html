@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./salarios.css">
+    <title>Salarios | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Salarios
+        </h1>
+        <p>Este es el cuarto taller del curso práctico de JavaScript</p>
+    </header>
+    <section>
+        <h2>Calcula el promedio de un grupo de salarios y del top 10 de mayor salarios</h2>
+        <form>
+            <div>
+                <label for="valor">
+                    <span>Escribe el valor deseado</span>
+                    <input id="valor" type="number" value="0" />
+                </label>
+            </div>
+            <button type="button" onclick="onClickButtonValor()">
+                Ingresar salario
+            </button>
+            <button type="button" onclick="onClickButtonGeneral()">
+                Calcular el promedio general
+            </button>
+            <button type="button" onclick="onClickButtonTop10()">
+                Calcular el promedio del top 10
+            </button>
+            <p id="resultado"></p>
+        </form>    
+    </section>    
+    <script src="./salarios.js"></script>
+</body>
+</html>
